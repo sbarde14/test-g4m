@@ -1,6 +1,6 @@
 //   with post message
 window.addEventListener('load', function () {
-//
+//try this
   // Define your image URL in a variable
   var imageUrl = confCreative.imgSrc;
 
