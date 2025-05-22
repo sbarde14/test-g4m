@@ -28,6 +28,7 @@ window.addEventListener('load', function () {
     document.documentElement.style.display = 'flex';
     document.documentElement.style.alignItems = 'center';
     document.documentElement.style.justifyContent = 'center';
+    document.body.style.width = '100%';
     
     image.onload = () => {
         const width = image.clientWidth;
