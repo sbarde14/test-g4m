@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
     link.href = confCreative.clickUrlUnesc+'&adurl='+'https://www.prodottiselex.it';
     link.style.display = 'block';
     link.target = '_blank';
+
     // Create the <img> element
     const image = document.createElement('img');
     image.src = confCreative.imgSrc;
@@ -23,6 +24,11 @@ window.addEventListener('load', function () {
     document.body.appendChild(link);
 
 
+    document.documentElement.style.height = '100%';
+    document.documentElement.style.display = 'flex';
+    document.documentElement.style.alignItems = 'center';
+    document.documentElement.style.justifyContent = 'center';
+    
     image.onload = () => {
         const width = image.clientWidth;
         const height = width * 9 / 16;
