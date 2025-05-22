@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
     // Create the <a> element
     const link = document.createElement('a');
-    link.href = confCreative.clickUrlUnesc+'&'+adurl+'='+'https://www.google.it';
+    link.href = confCreative.clickUrlUnesc+'&adurl='+'https://www.google.it';
 
     // Create the <img> element
     const image = document.createElement('img');
