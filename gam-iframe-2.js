@@ -5,8 +5,8 @@ window.addEventListener('load', function () {
 
     // Create the <a> element
     const link = document.createElement('a');
-    link.href = confCreative.clickUrlUnesc+'&adurl='+'https://www.google.it';
-
+    link.href = confCreative.clickUrlUnesc+'&adurl='+'https://www.prodottiselex.it';
+    link.style.display = 'block';
     // Create the <img> element
     const image = document.createElement('img');
     image.src = confCreative.imgSrc;
