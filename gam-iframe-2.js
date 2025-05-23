@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 
     // Create the <a> element
     const link = document.createElement('a');
-    link.href = confCreative.clickUrlUnesc+'&adurl='+'https://www.prodottiselex.it';
+    link.href = confCreative.clickUrlUnesc+'&adurl='+confCreative.adUrl;
     link.style.display = 'block';
     link.target = '_blank';
 
