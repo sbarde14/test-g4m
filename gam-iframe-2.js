@@ -33,7 +33,9 @@ window.addEventListener('load', function () {
     image.onload = () => {
         const width = image.clientWidth;
         const height = width * 9 / 16;
-        image.height = `${height}`;
+        if(height > 0){
+            image.height = `${height}`;
+        }
     };
   
     window.parent.postMessage({ type: 'resizeRequest' }, '*');
