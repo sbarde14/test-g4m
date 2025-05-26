@@ -37,6 +37,12 @@ window.addEventListener('load', function () {
             image.height = `${height}`;
         }
     };
+
+    const message = {
+        type: 'resizeRequest',
+        width: image.offsetWidth,
+        height: image.offsetHeight,
+    };
   
-    window.parent.postMessage({ type: 'resizeRequest' }, '*');
+    window.parent.postMessage(message, '*');
   });
