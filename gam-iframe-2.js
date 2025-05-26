@@ -36,13 +36,15 @@ window.addEventListener('load', function () {
         if(height > 0){
             image.height = `${height}`;
         }
+
+        const message = {
+            type: 'resizeRequest',
+            width: image.width,
+            height: image.height,
+        };
+      
+        window.parent.postMessage(message, '*');
     };
 
-    const message = {
-        type: 'resizeRequest',
-        width: image.offsetWidth,
-        height: image.offsetHeight,
-    };
-  
-    window.parent.postMessage(message, '*');
+    
   });
