@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
     const link = document.createElement('a');
     link.href = confCreative.clickUrlUnesc+confCreative.adUrl;
     link.style.display = 'block';
-    link.target = '_blank';
+    link.target = confCreative.advTarget ? confCreative.advTarget : '_blank';
 
     // Create the <img> element
     const image = document.createElement('img');
